@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background: hsl(225, 100%, 98%) url(./images/pattern-background-mobile.svg) no-repeat;
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+}
+
+button{
+    display: block;
+    margin: 5px;
+    border: none;
+    background: none;
+    text-align: center;
+    width: 80%;
+    cursor: pointer;
+}
+
+.card{
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.design{
+    width: 100%;
+    height: 200px;
+    background: url(./images/illustration-hero.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    -webkit-border-radius: 20px 20px 0px 0px;
+    -moz-border-radius: 20px 20px 0px 0px;
+    -ms-border-radius: 20px 20px 0px 0px;
+    -o-border-radius: 20px 20px 0px 0px;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 18px;
+    padding: 20px;
+    color:hsl(223, 47%, 23%);
+}
+
+.description{
+    margin: 5px 50px;
+}
+.pricing{
+    width: 80%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.col-1, .col-2{
+    width: 40%;
+    position: relative;
+}
+.col-1{
+    left: 50px;
+}
+.col-2{
+    right: -20px;
+}
+.col-1::before{
+    content: url("./images/icon-music.svg");
+    position: absolute;
+    left: -60px;
+    top: -5px;
+}
+.plan{
+    font-weight: 600;
+    color: hsl(223, 47%, 23%);
+}
+
+.proceed{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 15px;
+    border-radius:10px;
+    font-weight: 600;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+.cancel{
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+@media (min-width:376px) and (max-width:1440px){
+    .card{
+        width: 370px;
+    }
+    .description{
+        margin: 10px;
+    }
+    .pricing{
+        width: 90%;
+    }
+    .proceed{
+        width: 90%;
+    }
+    body{
+        background: hsl(225, 100%, 98%) url(./images/pattern-background-desktop.svg) no-repeat;
+    }
+}
